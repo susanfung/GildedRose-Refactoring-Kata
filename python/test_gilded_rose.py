@@ -25,6 +25,12 @@ class GildedRoseTest(unittest.TestCase):
         quality = [0]
         verify_all_combinations(lambda a, b, c: create_items(a, b, c), [name, sellIn, quality])
 
+    def test_quality_for_items(self):
+        name = ["Aged Brie", "Sulfuras, Hand of Ragnaros", "Backstage passes to a TAFKAL80ETC concert"]
+        sellIn = [11, 10, 9, 5, 4, 0, -1]
+        quality = [0, 50]
+        verify_all_combinations(lambda a, b, c: create_items(a, b, c), [name, sellIn, quality])
+
         
 if __name__ == '__main__':
     unittest.main()

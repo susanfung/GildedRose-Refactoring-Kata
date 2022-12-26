@@ -19,6 +19,12 @@ class GildedRoseTest(unittest.TestCase):
         quality = [2]
         verify_all_combinations(lambda a, b, c: create_items(a, b, c), [name, sellIn, quality])
 
+    def test_quality_is_never_negative(self):
+        name = ["foo"]
+        sellIn = [1, 0, -1]
+        quality = [0]
+        verify_all_combinations(lambda a, b, c: create_items(a, b, c), [name, sellIn, quality])
+
         
 if __name__ == '__main__':
     unittest.main()

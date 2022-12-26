@@ -13,6 +13,11 @@ def create_items(name, sellIn, quality):
     return items[0]
 
 class GildedRoseTest(unittest.TestCase):
+    def test_sellIn_decreases_by_one(self):
+        name = ["foo"]
+        sellIn = [1, 0]
+        quality = [2]
+        verify_all_combinations(lambda a, b, c: create_items(a, b, c), [name, sellIn, quality])
     def test_quality_decreases_by_2_when_sellIn_less_than_or_equal_to_zero(self):
         name = ["foo"]
         sellIn = [1, 0, -1]

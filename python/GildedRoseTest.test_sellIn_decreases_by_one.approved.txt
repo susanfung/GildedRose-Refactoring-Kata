@@ -1,0 +1,2 @@
+args: ('foo', 1, 2) => foo, 0, 1
+args: ('foo', 0, 2) => foo, -1, 0

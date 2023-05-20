@@ -2,7 +2,7 @@ package com.gildedrose;
 
 public class BackstagePasses {
 
-    public void updateBackstagePasses(Item item) {
+    public void updateItem(Item item) {
         if (item.quality < 50) {
             item.quality = item.quality + 1;
 

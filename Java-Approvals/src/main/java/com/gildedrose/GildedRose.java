@@ -25,10 +25,12 @@ class GildedRose {
                 }
             }
 
-            Sulfuras sulfuras = new Sulfuras();
-            if (sulfuras.isSulfuras(item)) {
-                sulfuras.updateSulfuras(item);
-                continue;
+            {
+                Sulfuras sulfuras = new Sulfuras();
+                if (sulfuras.isSulfuras(item)) {
+                    sulfuras.updateSulfuras(item);
+                    continue;
+                }
             }
 
             if (OtherItems.isItem(item)) {

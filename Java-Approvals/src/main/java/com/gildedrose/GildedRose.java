@@ -14,7 +14,7 @@ class GildedRose {
                 continue;
             }
 
-            if (item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+            if (isBackstagePasses(item)) {
                 updateBackstagePasses(item);
                 continue;
             }
@@ -29,6 +29,10 @@ class GildedRose {
                 continue;
             }
         }
+    }
+
+    private static boolean isBackstagePasses(Item item) {
+        return item.name.equals("Backstage passes to a TAFKAL80ETC concert");
     }
 
     private static boolean isAgedBrie(Item item) {

@@ -33,7 +33,7 @@ class GildedRose {
                 }
             }
 
-            if (OtherItems.isItem(item)) {
+            if (new OtherItems().isItem(item)) {
                 OtherItems.updateItem(item);
                 continue;
             }

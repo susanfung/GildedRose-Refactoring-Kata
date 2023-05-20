@@ -1,9 +1,6 @@
 package com.gildedrose;
 
 public class OtherItems {
-    public static boolean isItem(Item item) {
-        return true;
-    }
 
     public static void updateItem(Item item) {
         if (item.quality > 0) {
@@ -17,5 +14,9 @@ public class OtherItems {
                 item.quality = item.quality - 1;
             }
         }
+    }
+
+    public boolean isItem(Item item) {
+        return true;
     }
 }

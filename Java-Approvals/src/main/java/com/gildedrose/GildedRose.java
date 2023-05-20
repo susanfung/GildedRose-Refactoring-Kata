@@ -24,11 +24,15 @@ class GildedRose {
                 continue;
             }
 
-            if (true) {
+            if (isItem()) {
                 updateItem(item);
                 continue;
             }
         }
+    }
+
+    private static boolean isItem() {
+        return true;
     }
 
     private static boolean isSulfuras(Item item) {

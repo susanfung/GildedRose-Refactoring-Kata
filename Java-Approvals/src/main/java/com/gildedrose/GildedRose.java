@@ -9,7 +9,7 @@ class GildedRose {
 
     public void updateQuality() {
         for (Item item : items) {
-            if (true) {
+            if (item.name.equals("Aged Brie")) {
                 appleSauce(item);
                 continue;
             } else {

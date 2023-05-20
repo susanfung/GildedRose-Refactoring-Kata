@@ -20,6 +20,7 @@ class GildedRose {
             }
 
             if (item.name.equals("Sulfuras, Hand of Ragnaros")) {
+                updateSulfuras(item);
                 continue;
             }
 
@@ -28,6 +29,10 @@ class GildedRose {
                 continue;
             }
         }
+    }
+
+    private void updateSulfuras(Item item) {
+        return;
     }
 
     private static void updateItem(Item item) {

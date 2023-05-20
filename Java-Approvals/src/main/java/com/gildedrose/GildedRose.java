@@ -67,7 +67,6 @@ class GildedRose {
                             }
                         }
                     } else {
-                        item.quality = 0;
                     }
                 }
                 continue;

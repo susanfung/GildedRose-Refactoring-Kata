@@ -19,7 +19,7 @@ class GildedRose {
                 continue;
             }
 
-            if (true) {
+            if (item.name.equals("Sulfuras, Hand of Ragnaros")) {
                 appleSauce(item);
                 continue;
             } else {

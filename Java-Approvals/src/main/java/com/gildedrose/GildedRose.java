@@ -39,7 +39,7 @@ class GildedRose {
         return item.name.equals("Sulfuras, Hand of Ragnaros");
     }
 
-    private void updateSulfuras(Item item) {
+    private static void updateSulfuras(Item item) {
         return;
     }
 

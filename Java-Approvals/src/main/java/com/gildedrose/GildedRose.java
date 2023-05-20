@@ -17,8 +17,9 @@ class GildedRose {
                 }
             }
 
-            if (new BackstagePasses().isBackstagePasses(item)) {
-                new BackstagePasses().updateBackstagePasses(item);
+            BackstagePasses backstagePasses = new BackstagePasses();
+            if (backstagePasses.isBackstagePasses(item)) {
+                backstagePasses.updateBackstagePasses(item);
                 continue;
             }
 

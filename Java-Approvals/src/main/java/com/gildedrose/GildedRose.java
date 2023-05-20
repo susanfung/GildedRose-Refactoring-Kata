@@ -28,7 +28,7 @@ class GildedRose {
             {
                 Sulfuras sulfuras = new Sulfuras();
                 if (sulfuras.isItem(item)) {
-                    sulfuras.updateSulfuras(item);
+                    sulfuras.updateItem(item);
                     continue;
                 }
             }

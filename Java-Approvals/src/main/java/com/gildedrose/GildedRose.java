@@ -11,9 +11,10 @@ class GildedRose {
         for (Item item : items) {
             if (item.name.equals("Aged Brie")) {
                 updateAgedBrie(item);
-            } else {
-                appleSauce(item);
+                continue;
             }
+
+            appleSauce(item);
         }
     }
 

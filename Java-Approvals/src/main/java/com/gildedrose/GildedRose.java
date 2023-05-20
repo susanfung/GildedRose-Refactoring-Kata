@@ -12,7 +12,7 @@ class GildedRose {
             {
                 AgedBrie agedBrie = new AgedBrie();
                 if (agedBrie.isItem(item)) {
-                    agedBrie.updateAgedBrie(item);
+                    agedBrie.updateItem(item);
                     continue;
                 }
             }

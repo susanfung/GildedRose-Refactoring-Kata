@@ -36,10 +36,7 @@ class GildedRose {
                 }
 
                 if (item.sellIn < 0) {
-                    if (false) {
-                    } else {
-                        item.quality = 0;
-                    }
+                    item.quality = 0;
                 }
                 continue;
             } else {

@@ -6,7 +6,7 @@ public class Sulfuras {
         return;
     }
 
-    public boolean isSulfuras(Item item) {
+    public boolean isItem(Item item) {
         return item.name.equals("Sulfuras, Hand of Ragnaros");
     }
 }

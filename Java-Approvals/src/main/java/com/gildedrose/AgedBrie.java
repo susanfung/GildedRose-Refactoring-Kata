@@ -1,7 +1,8 @@
 package com.gildedrose;
 
-public class AgedBrie {
+public class AgedBrie implements ItemName {
 
+    @Override
     public void updateItem(Item item) {
         if (item.quality < 50) {
             item.quality = item.quality + 1;
@@ -16,6 +17,7 @@ public class AgedBrie {
         }
     }
 
+    @Override
     public boolean isItem(Item item) {
         return item.name.equals("Aged Brie");
     }

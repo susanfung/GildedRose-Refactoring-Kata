@@ -17,10 +17,12 @@ class GildedRose {
                 }
             }
 
-            BackstagePasses backstagePasses = new BackstagePasses();
-            if (backstagePasses.isBackstagePasses(item)) {
-                backstagePasses.updateBackstagePasses(item);
-                continue;
+            {
+                BackstagePasses backstagePasses = new BackstagePasses();
+                if (backstagePasses.isBackstagePasses(item)) {
+                    backstagePasses.updateBackstagePasses(item);
+                    continue;
+                }
             }
 
             if (Sulfuras.isSulfuras(item)) {

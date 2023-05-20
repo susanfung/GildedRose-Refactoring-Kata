@@ -9,7 +9,7 @@ class GildedRose {
 
     public void updateQuality() {
         for (Item item : items) {
-            if (item.name.equals("Aged Brie")) {
+            if (isAgedBrie(item)) {
                 updateAgedBrie(item);
                 continue;
             }
@@ -29,6 +29,10 @@ class GildedRose {
                 continue;
             }
         }
+    }
+
+    private static boolean isAgedBrie(Item item) {
+        return item.name.equals("Aged Brie");
     }
 
     private void updateSulfuras(Item item) {

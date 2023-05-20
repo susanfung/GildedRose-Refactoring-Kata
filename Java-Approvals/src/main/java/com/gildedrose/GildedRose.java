@@ -9,10 +9,12 @@ class GildedRose {
 
     public void updateQuality() {
         for (Item item : items) {
-            AgedBrie agedBrie = new AgedBrie();
-            if (agedBrie.isAgedBrie(item)) {
-                agedBrie.updateAgedBrie(item);
-                continue;
+            {
+                AgedBrie agedBrie = new AgedBrie();
+                if (agedBrie.isAgedBrie(item)) {
+                    agedBrie.updateAgedBrie(item);
+                    continue;
+                }
             }
 
             if (BackstagePasses.isBackstagePasses(item)) {

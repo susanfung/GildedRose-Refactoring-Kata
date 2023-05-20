@@ -24,14 +24,14 @@ class GildedRose {
                 continue;
             }
 
-            if (isItem()) {
+            if (isItem(item)) {
                 updateItem(item);
                 continue;
             }
         }
     }
 
-    private static boolean isItem() {
+    private static boolean isItem(Item item) {
         return true;
     }
 

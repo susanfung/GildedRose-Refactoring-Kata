@@ -23,7 +23,10 @@ class GildedRose {
                 continue;
             }
 
-            updateItem(item);
+            if (true) {
+                updateItem(item);
+                continue;
+            }
         }
     }
 

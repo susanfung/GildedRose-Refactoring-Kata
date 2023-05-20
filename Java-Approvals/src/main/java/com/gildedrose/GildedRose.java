@@ -10,7 +10,7 @@ class GildedRose {
     public void updateQuality() {
         for (Item item : items) {
             if (new AgedBrie().isAgedBrie(item)) {
-                AgedBrie.updateAgedBrie(item);
+                new AgedBrie().updateAgedBrie(item);
                 continue;
             }
 

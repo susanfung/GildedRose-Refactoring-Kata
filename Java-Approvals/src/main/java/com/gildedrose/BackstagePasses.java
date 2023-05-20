@@ -26,7 +26,7 @@ public class BackstagePasses {
         }
     }
 
-    public boolean isBackstagePasses(Item item) {
+    public boolean isItem(Item item) {
         return item.name.equals("Backstage passes to a TAFKAL80ETC concert");
     }
 }

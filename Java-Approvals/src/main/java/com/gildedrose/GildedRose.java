@@ -14,7 +14,13 @@ class GildedRose {
                 continue;
             }
 
-            appleSauce(item);
+            if (true) {
+                appleSauce(item);
+                continue;
+            } else {
+                appleSauce(item);
+                continue;
+            }
         }
     }
 

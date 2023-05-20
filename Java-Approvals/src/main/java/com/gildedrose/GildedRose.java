@@ -30,9 +30,7 @@ class GildedRose {
 
                 if (item.sellIn < 0) {
                     if (item.quality > 0) {
-                        if (true) {
-                            item.quality = item.quality - 1;
-                        }
+                        item.quality = item.quality - 1;
                     }
                 }
                 continue;

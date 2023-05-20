@@ -1,7 +1,8 @@
 package com.gildedrose;
 
-public class OtherItems {
+public class OtherItems implements ItemName {
 
+    @Override
     public void updateItem(Item item) {
         if (item.quality > 0) {
             item.quality = item.quality - 1;
@@ -16,6 +17,7 @@ public class OtherItems {
         }
     }
 
+    @Override
     public boolean isItem(Item item) {
         return true;
     }

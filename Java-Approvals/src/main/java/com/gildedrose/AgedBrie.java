@@ -16,7 +16,7 @@ public class AgedBrie {
         }
     }
 
-    public boolean isAgedBrie(Item item) {
+    public boolean isItem(Item item) {
         return item.name.equals("Aged Brie");
     }
 }

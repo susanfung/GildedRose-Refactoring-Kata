@@ -11,7 +11,7 @@ class GildedRose {
         for (Item item : items) {
             {
                 AgedBrie agedBrie = new AgedBrie();
-                if (agedBrie.isAgedBrie(item)) {
+                if (agedBrie.isItem(item)) {
                     agedBrie.updateAgedBrie(item);
                     continue;
                 }

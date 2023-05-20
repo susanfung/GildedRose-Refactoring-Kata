@@ -10,7 +10,7 @@ class GildedRose {
     public void updateQuality() {
         for (Item item : items) {
             {
-                AgedBrie agedBrie = new AgedBrie();
+                final AgedBrie agedBrie = new AgedBrie();
                 if (agedBrie.isItem(item)) {
                     agedBrie.updateItem(item);
                     continue;
@@ -18,7 +18,7 @@ class GildedRose {
             }
 
             {
-                BackstagePasses backstagePasses = new BackstagePasses();
+                final BackstagePasses backstagePasses = new BackstagePasses();
                 if (backstagePasses.isItem(item)) {
                     backstagePasses.updateItem(item);
                     continue;
@@ -26,7 +26,7 @@ class GildedRose {
             }
 
             {
-                Sulfuras sulfuras = new Sulfuras();
+                final Sulfuras sulfuras = new Sulfuras();
                 if (sulfuras.isItem(item)) {
                     sulfuras.updateItem(item);
                     continue;
@@ -34,7 +34,7 @@ class GildedRose {
             }
 
             {
-                OtherItems otherItems = new OtherItems();
+                final OtherItems otherItems = new OtherItems();
                 if (otherItems.isItem(item)) {
                     otherItems.updateItem(item);
                     continue;

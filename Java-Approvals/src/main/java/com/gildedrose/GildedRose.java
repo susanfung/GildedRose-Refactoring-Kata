@@ -23,9 +23,7 @@ class GildedRose {
                 continue;
             } else {
                 if (item.quality > 0) {
-                    if (true) {
-                        item.quality = item.quality - 1;
-                    }
+                    item.quality = item.quality - 1;
                 }
 
                 if (true) {

@@ -1,9 +1,6 @@
 package com.gildedrose;
 
 public class BackstagePasses {
-    public static boolean isBackstagePasses(Item item) {
-        return item.name.equals("Backstage passes to a TAFKAL80ETC concert");
-    }
 
     public static void updateBackstagePasses(Item item) {
         if (item.quality < 50) {
@@ -27,5 +24,9 @@ public class BackstagePasses {
         if (item.sellIn < 0) {
             item.quality = 0;
         }
+    }
+
+    public boolean isBackstagePasses(Item item) {
+        return item.name.equals("Backstage passes to a TAFKAL80ETC concert");
     }
 }

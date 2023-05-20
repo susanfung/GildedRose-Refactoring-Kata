@@ -19,8 +19,8 @@ class GildedRose {
                 continue;
             }
 
-            if (isSulfuras(item)) {
-                updateSulfuras(item);
+            if (Sulfuras.isSulfuras(item)) {
+                Sulfuras.updateSulfuras(item);
                 continue;
             }
 
@@ -33,14 +33,6 @@ class GildedRose {
 
     private static boolean isItem(Item item) {
         return true;
-    }
-
-    private static boolean isSulfuras(Item item) {
-        return item.name.equals("Sulfuras, Hand of Ragnaros");
-    }
-
-    private static void updateSulfuras(Item item) {
-        return;
     }
 
     private static void updateItem(Item item) {

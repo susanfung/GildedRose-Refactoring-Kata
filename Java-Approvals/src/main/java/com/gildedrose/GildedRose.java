@@ -14,7 +14,7 @@ class GildedRose {
                 continue;
             }
 
-            if (true) {
+            if (item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
                 appleSauce(item);
                 continue;
             } else {
